@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#173f3b">
+<title>دليل جغرافية العراق | الثالث المتوسط</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
+:root{--ink:#182b2a;--muted:#687875;--paper:#f5f2e9;--surface:#fffdf7;--green:#1c6256;--green2:#dcebe1;--lime:#d9e34c;--coral:#dc6546;--gold:#d5a63a;--blue:#478caa;--line:#d8ded4;--shadow:0 16px 40px rgba(24,43,42,.08);--display:'Amiri',serif;--body:'IBM Plex Sans Arabic',Tahoma,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);line-height:1.8}button,input{font:inherit}a{color:inherit}.topline{height:7px;background:linear-gradient(90deg,var(--coral) 0 18%,var(--lime) 18% 45%,var(--green) 45% 100%)}
+.masthead{background-color:#173f3b;color:#f7f4e7;position:relative;overflow:hidden;padding:38px max(24px,calc((100vw - 1280px)/2)) 34px}.masthead:before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(217,227,76,.17) 1px,transparent 1.5px);background-size:22px 22px;mask-image:linear-gradient(90deg,transparent 12%,#000 100%);opacity:.6}.mast-inner{position:relative;display:flex;align-items:flex-end;justify-content:space-between;gap:24px;max-width:1280px;margin:auto}.eyebrow{font-size:13px;color:#d9e34c;font-weight:700;letter-spacing:0}.masthead h1{font-family:var(--display);font-size:clamp(34px,4vw,56px);line-height:1.2;margin:6px 0 8px;font-weight:700}.masthead p{max-width:720px;margin:0;color:#d7e3d9}.edition{align-self:flex-start;border:1px solid rgba(255,255,255,.3);padding:9px 14px;font-size:13px;white-space:nowrap}.mast-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.action{border:0;background:var(--lime);color:#172c29;padding:9px 14px;cursor:pointer;font-weight:700}.action.secondary{background:transparent;color:#f7f4e7;border:1px solid #69827a}.action:hover{filter:brightness(1.05)}
+.shell{max-width:1280px;margin:0 auto;padding:28px 22px 72px;display:grid;grid-template-columns:248px minmax(0,1fr);gap:32px}.rail{position:sticky;top:18px;align-self:start;max-height:calc(100vh - 36px);overflow:auto;padding:18px;background:#e8e9da;border-top:4px solid var(--green)}.rail h2{font-size:14px;margin:0 0 12px}.rail nav{display:grid;gap:3px}.rail nav a{text-decoration:none;color:#405653;font-size:13px;padding:6px 8px;border-right:2px solid transparent}.rail nav a:hover,.rail nav a.active{background:#fffdf7;border-color:var(--coral);color:var(--ink)}.rail-stat{margin-top:18px;border-top:1px solid #cdd4c7;padding-top:14px;color:var(--muted);font-size:12px}.progress{height:5px;background:#cfd5ca;margin-top:7px}.progress span{display:block;height:100%;width:0;background:var(--coral);transition:width .2s}
+.content{min-width:0}.intro{display:grid;grid-template-columns:1.35fr .65fr;gap:16px;margin-bottom:22px}.intro-copy,.quick-facts{background:var(--surface);padding:19px 22px;border:1px solid var(--line)}.intro-copy{border-right:4px solid var(--coral)}.intro h2{font-family:var(--display);font-size:25px;margin:0 0 4px}.intro p{margin:0;color:#566762}.quick-facts{display:flex;align-items:center;justify-content:space-around;gap:10px;text-align:center}.quick-facts strong{font-family:var(--display);font-size:27px;display:block;color:var(--green);line-height:1.2}.quick-facts span{font-size:11px;color:var(--muted)}
+.toolbar{display:flex;gap:9px;align-items:center;margin:18px 0 22px;flex-wrap:wrap}.searchbox{position:relative;flex:1;min-width:210px}.searchbox input{width:100%;height:43px;border:1px solid var(--line);background:var(--surface);padding:8px 14px 8px 40px;outline:none}.searchbox input:focus{border-color:var(--green)}.searchbox:after{content:"⌕";position:absolute;left:12px;top:0;font-size:25px;color:var(--green)}.filter{height:43px;padding:0 12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer}.filter[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:white}.topic-list{display:grid;gap:22px}.topic{scroll-margin-top:18px;background:var(--surface);border:1px solid var(--line);box-shadow:var(--shadow);overflow:hidden}.topic-head{display:flex;gap:15px;align-items:flex-start;padding:19px 22px 15px;border-bottom:1px solid var(--line);background:linear-gradient(90deg,#f7f4e8,#edf2e5)}.topic-num{flex:0 0 38px;height:38px;display:grid;place-items:center;background:var(--green);color:#fff;font-family:var(--display);font-size:20px}.topic-head h2{font-family:var(--display);font-size:26px;line-height:1.3;margin:0}.topic-head p{margin:3px 0 0;color:var(--muted);font-size:13px}.mark-done{margin-right:auto;display:flex;align-items:center;gap:7px;color:var(--muted);font-size:12px;white-space:nowrap}.mark-done input{accent-color:var(--green);width:17px;height:17px}.topic-body{padding:19px 22px 22px}.summary{font-size:15px;margin:0 0 18px;padding:12px 15px;background:#f0f3e7;border-right:3px solid var(--lime)}.subgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.subsection{min-width:0}.subsection h3{display:flex;align-items:center;gap:8px;font-size:15px;margin:0 0 9px}.subsection h3:before{content:"";width:8px;height:8px;background:var(--coral);display:inline-block}.subsection ul{margin:0;padding:0 19px 0 0}.subsection li{padding:3px 0;font-size:14px}.definition{display:grid;gap:7px}.definition p{margin:0;font-size:14px}.definition b{color:var(--green)}details{border-top:1px solid #e5e7df;padding:8px 0}details:first-child{border-top:0}summary{cursor:pointer;font-weight:600;font-size:14px}details p{font-size:13px;margin:6px 0 0;color:#4e605b}.source-note{font-size:11px;color:var(--muted);margin-top:8px}.source-note a{color:var(--green);text-underline-offset:3px}.topic[hidden]{display:none}
+.exam-section{scroll-margin-top:20px;margin-top:35px;background:#173f3b;color:#f8f5e9;padding:25px}.exam-section h2{font-family:var(--display);font-size:31px;margin:0}.exam-section>p{color:#d0dfd5;margin:4px 0 18px}.exam-notice{padding:12px 15px;border-right:3px solid var(--lime);background:#224b46;color:#eff2e8;font-size:13px;margin-bottom:16px}.exam-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.exam-item{padding:15px;background:#f8f5e9;color:var(--ink);border-top:3px solid var(--coral)}.exam-meta{display:flex;gap:7px;align-items:center;flex-wrap:wrap;font-size:12px;color:var(--green);font-weight:700}.exam-item h3{font-family:var(--display);font-size:21px;margin:5px 0}.exam-item p{font-size:13px;margin:4px 0 10px;color:#55645f}.exam-item a{display:inline-block;color:#174e46;font-size:12px;font-weight:700;text-underline-offset:3px}.year-pill{background:#dcebe1;padding:2px 8px}.round-pill{background:#fae4d8;padding:2px 8px}.sources{margin-top:17px;border-top:1px solid #527069;padding-top:14px}.sources h3{font-size:14px;margin:0 0 7px}.sources ul{margin:0;padding-right:18px;color:#d0dfd5;font-size:12px}.sources a{color:#f2dc72}.source-list{display:flex;gap:10px;flex-wrap:wrap}.source-list a{font-size:12px}.footer-note{text-align:center;padding:24px;color:var(--muted);font-size:12px}.editing [data-editable]{outline:1px dashed var(--coral);outline-offset:3px;cursor:text}.empty-state{display:none;padding:24px;background:var(--surface);text-align:center;color:var(--muted)}.empty-state.show{display:block}
+@media(max-width:900px){.shell{grid-template-columns:1fr;gap:18px}.rail{position:static;max-height:none;padding:13px}.rail nav{display:flex;overflow-x:auto;gap:6px}.rail nav a{white-space:nowrap}.rail-stat{display:none}.intro{grid-template-columns:1fr}.mast-inner{display:block}.edition{display:inline-block;margin-top:15px}.exam-grid{grid-template-columns:1fr}}
+@media(max-width:620px){.masthead{padding:27px 19px}.masthead h1{font-size:37px}.shell{padding:18px 13px 48px}.topic-head{padding:15px 14px 12px;gap:10px}.topic-head h2{font-size:22px}.topic-head p{display:none}.mark-done{font-size:0}.mark-done input{width:20px;height:20px}.topic-body{padding:15px 14px 17px}.subgrid{grid-template-columns:1fr}.topic[hidden]{display:block!important}.topic-list{gap:8px}.exam-section{break-before:page}.exam-item{break-inside:avoid}.topic details p{display:block}.footer-note{display:none}}
+</style>
+<style>
+.quiz-section{margin-top:24px;padding:24px;background:#fffdf7;border:1px solid var(--line);border-top:4px solid var(--coral);box-shadow:var(--shadow)}
+.quiz-section h2{font-family:var(--display);font-size:30px;margin:0}
+.quiz-section>p{margin:2px 0 16px;color:var(--muted);font-size:13px}
+.quiz-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.quiz-question{min-width:0;margin:0;padding:13px;border:1px solid var(--line);background:#f7f6ed}
+.quiz-question legend{padding:0 5px;font-size:14px;font-weight:700}
+.quiz-kind{display:inline-block;margin-left:7px;color:var(--green);font-size:11px}
+.quiz-question label{display:flex;align-items:flex-start;gap:8px;padding:5px 7px;margin-top:4px;background:#fffdf7;border:1px solid transparent;font-size:13px;cursor:pointer}
+.quiz-question label:hover{border-color:#9eb6aa}
+.quiz-question input{margin-top:6px;accent-color:var(--green);flex:0 0 auto}
+.quiz-question.is-right{border-color:#398565;background:#e9f4e8}
+.quiz-question.is-right .quiz-feedback{color:#176143}
+.quiz-question.is-wrong{border-color:#cb6549;background:#fff0e9}
+.quiz-question.is-wrong .quiz-feedback{color:#a3422c}
+.quiz-feedback{min-height:1.5em;margin:6px 0 0;font-size:12px;font-weight:700}
+.quiz-actions{display:flex;gap:9px;margin-top:15px}
+.quiz-actions button{border:0;padding:9px 16px;font-weight:700;cursor:pointer}
+.quiz-actions .grade{background:var(--green);color:#fff}
+.quiz-actions .reset{background:#e8e9da;color:var(--ink)}
+.quiz-result{margin:12px 0 0;font-weight:700;color:var(--green)}
+@media(max-width:620px){.quiz-section{padding:17px 12px}.quiz-section h2{font-size:27px}.quiz-grid{grid-template-columns:1fr}}
+body{font-size:22px}
+.topic-body .summary{font-size:22px;line-height:1.9}
+.topic-body .definition p,.topic-body .subsection li,.topic-body details summary,.topic-body details p{font-size:21px}
+.topic-body .subsection h3{font-size:17px}
+.exam-item details summary,.exam-item details p,.exam-item p{font-size:19px}
+.quiz-question legend,.quiz-question label{font-size:17px}
+@media(max-width:620px){body{font-size:21px}.topic-body .summary{font-size:21px}.topic-body .definition p,.topic-body .subsection li,.topic-body details summary,.topic-body details p{font-size:20px}}
+.topic.is-complete{border-color:var(--green);background:#f2f7ef}
+.topic.is-complete .topic-head{background:#e2efe4;border-bottom-color:#b9cdbd}
+.topic.is-complete .topic-body{background:#f2f7ef}
+.topic.is-complete .topic-num{background:var(--coral)}
+.topic.is-complete .mark-done{color:var(--green);font-weight:700}
+.topic.is-complete .mark-done::after{content:" · الموضوع مكتمل"}
+@page{size:A4 portrait;margin:12mm}
+@media print{
+  html,body{background:#fff!important;color:#111!important;font-size:12pt!important}
+  .topline,.rail,.toolbar,.mast-actions,.mark-done,.quiz-actions,.footer-note,.empty-state{display:none!important}
+  #finalQuizSection{display:none!important}
+  .shell{display:block;max-width:none;margin:0;padding:0}
+  .masthead{padding:0 0 8mm;background:#fff!important;color:#111!important;overflow:visible}
+  .masthead:before{display:none}
+  .masthead p{color:#333!important}
+  .edition{color:#111;border-color:#777}
+  .intro{grid-template-columns:1fr 1fr}
+  .intro-copy,.quick-facts,.topic,.exam-item,.quiz-section,.quiz-question{background:#fff!important;color:#111!important;box-shadow:none!important}
+  .topic-list{display:block}
+  .topic[hidden]{display:block!important}
+  .topic{margin:0 0 7mm;border:1px solid #aaa;overflow:visible;break-inside:auto}
+  .topic-head{background:#f1f1f1!important;break-after:avoid}
+  .subgrid,.exam-grid,.quiz-grid{display:block}
+  .subsection{margin-bottom:5mm;break-inside:auto}
+  .subsection h3{break-after:avoid}
+  .exam-item,.quiz-question{margin-bottom:4mm}
+  .exam-item details,.topic details,.quiz-question{break-inside:avoid}
+  .topic-body .summary,.topic-body .definition p,.topic-body .subsection li,.topic-body details summary,.topic-body details p,.exam-item details summary,.exam-item details p,.exam-item p,.quiz-question label{font-size:12pt!important}
+  .exam-section,.quiz-section{break-before:page;padding:0;background:#fff!important;color:#111!important}
+  .exam-section>p,.exam-notice,.sources,.sources a,.exam-item a{color:#111!important;background:#fff!important}
+  .exam-item{border:1px solid #999}
+  .topic details,.exam-item details{display:block}
+  .topic details>*,.exam-item details>*{display:block!important}
+  a{color:#111!important;text-decoration:none}
+}
+</style>
+<style>
+@media screen{
+  body{font-size:27.5px}
+  .masthead h1{font-size:70px}
+  .author-credit{font-size:16.25px}
+  .eyebrow,.edition,.rail h2,.rail nav a,.rail-stat,.topic-head p,.mark-done{font-size:16.25px}
+  .masthead p,.intro p{font-size:27.5px}
+  .intro h2{font-size:31.25px}
+  .quick-facts strong{font-size:33.75px}
+  .quick-facts span{font-size:13.75px}
+  .toolbar .searchbox input{height:53.75px;font-size:27.5px;padding:10px 17.5px 10px 50px}
+  .searchbox:after{font-size:31.25px}
+  .mast-actions .action{padding:11.25px 17.5px;font-size:27.5px}
+  .topic-num{flex-basis:47.5px;height:47.5px;font-size:25px}
+  .topic-head h2{font-size:32.5px}
+  .mark-done input{width:21.25px;height:21.25px}
+  .topic-body .summary{font-size:27.5px}
+  .topic-body .definition p,.topic-body .subsection li,.topic-body details summary,.topic-body details p{font-size:26.25px}
+  .topic-body .subsection h3{font-size:21.25px}
+  .exam-section h2{font-size:38.75px}
+  .exam-section>p,.exam-notice{font-size:16.25px}
+  .exam-meta,.exam-item a,.source-list a{font-size:15px}
+  .exam-item h3{font-size:26.25px}
+  .exam-item details summary,.exam-item details p,.exam-item p{font-size:23.75px}
+  .quiz-section h2{font-size:37.5px}
+  .quiz-section>p{font-size:16.25px}
+  .quiz-question legend,.quiz-question label{font-size:21.25px}
+  .quiz-kind{font-size:13.75px}
+  .quiz-feedback{font-size:15px}
+  .quiz-actions button{padding:11.25px 20px;font-size:27.5px}
+  .quiz-result{font-size:27.5px}
+}
+@media screen and (max-width:620px){
+  body{font-size:26.25px}
+  .masthead h1{font-size:46.25px}
+  .author-credit{font-size:14px}
+  .mark-done{font-size:0}
+  .topic-head h2{font-size:27.5px}
+  .topic-body .summary{font-size:26.25px}
+  .topic-body .definition p,.topic-body .subsection li,.topic-body details summary,.topic-body details p{font-size:25px}
+  .quiz-section h2{font-size:33.75px}
+  .topic[hidden]{display:none!important}
+}
+@media screen and (min-width:621px) and (max-width:1100px){
+  .shell{grid-template-columns:1fr;gap:18px}
+  .rail{position:static;max-height:none;padding:13px}
+  .rail nav{display:flex;overflow-x:auto;gap:6px}
+  .rail nav a{white-space:nowrap}
+  .rail-stat{display:none}
+  .intro,.subgrid,.exam-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header class="masthead">
+  <div class="mast-inner">
+    <div>
+      <div class="eyebrow">دليل مراجعة تفاعلي · جغرافية العراق</div>
+      <h1 data-editable>الاجتماعيات | الثالث المتوسط</h1>
+      <p data-editable>ملخص منظم للتعاريف والحقائق وأسئلة الكتاب والتدريب، مبني على صفحات الجغرافية المرفقة من الكتاب.</p>
+      <p class="author-credit">إعداد د. علي صالح</p>
+      <div class="mast-actions">
+        <button class="action secondary" type="button" onclick="window.print()" title="لإخفاء التاريخ ورابط الملف، ألغِ خيار الرؤوس والتذييلات في إعدادات الطباعة.">طباعة / حفظ PDF</button>
+      </div>
+    </div>
+    <div class="edition">الوحدة الأولى · الصفحات المرفقة 5–36</div>
+  </div>
+</header>
+<div class="shell">
+  <aside class="rail" aria-label="فهرس الموضوعات">
+    <h2>فهرس الموضوعات</h2>
+    <nav id="topicNav">
+      <a href="#location">الموقع الجغرافي والفلكي</a>
+      <a href="#borders">حدود العراق</a>
+      <a href="#area">المساحة والشكل</a>
+      <a href="#relief">أقسام السطح</a>
+      <a href="#climate">المناخ وعناصره</a>
+      <a href="#regions">الأقاليم المناخية</a>
+      <a href="#plants">النبات الطبيعي</a>
+      <a href="#water">الموارد المائية</a>
+      <a href="#tigris">نهر دجلة</a>
+      <a href="#euphrates">الفرات وشط العرب</a>
+      <a href="#ministry">المصادر الوزارية</a>
+    </nav>
+    <div class="rail-stat"><span id="progressText">0 من 10 موضوعات منجزة</span><div class="progress"><span id="progressBar"></span></div></div>
+  </aside>
+  <main class="content">
+    <section class="intro" aria-label="لمحة سريعة">
+      <div class="intro-copy">
+        <h2>مراجعة سريعة</h2>
+        <p>لكل موضوع: خلاصة مركزة، تعريفات وزارية، وأسئلة الكتاب والتعاليل بإجاباتها. وفي نهاية الصفحة أسئلة وزارية محلولة واختبار نهائي تفاعلي.</p>
+      </div>
+      <div class="quick-facts"><div><strong>4</strong><span>أقسام تضاريس</span></div><div><strong>3</strong><span>أقاليم مناخية</span></div><div><strong>5</strong><span>نطاقات نباتية</span></div></div>
+    </section>
+    <div class="toolbar" role="group" aria-label="البحث في الموضوعات">
+      <label class="searchbox"><input id="searchInput" type="search" placeholder="ابحث في الملخص والأسئلة" aria-label="ابحث في الموضوعات"></label>
+    </div>
+    <div class="topic-list" id="topicList">
+      <article class="topic" id="location" data-tags="definition questions">
+        <header class="topic-head"><span class="topic-num">١</span><div><h2 data-editable>موقع العراق الجغرافي والفلكي</h2><p>الموقع بالنسبة للعالم، ثم الموقع المحدد بالإحداثيات</p></div><label class="mark-done"><input type="checkbox" data-progress="location"> تم</label></header>
+        <div class="topic-body">
+          <p class="summary" data-editable>يقع العراق في النصف الشمالي من الكرة الأرضية، وفي جنوب غرب آسيا وشمال شرق العالم العربي. يمتد فلكياً بين دائرتي عرض ٢٩°–٣٧° شمالاً وخطي طول ٣٨°–٤٨° شرقاً.</p>
+          <div class="subgrid">
+            <section class="subsection"><h3>التعاريف</h3><div class="definition"><p><b>الموقع الجغرافي للعراق:</b> موضع العراق بالنسبة إلى قارات العالم والدول المحيطة؛ يقع في جنوب غرب آسيا وشمال شرق العالم العربي.</p><p><b>الموقع الفلكي للعراق:</b> موقعه المحدد بدوائر العرض وخطوط الطول؛ يقع بين دائرتي عرض ٢٩°–٣٧° شمالاً وخطي طول ٣٨°–٤٨° شرقاً.</p></div></section>
+            <section class="subsection"><h3>سؤال الكتاب والتدريب</h3><details><summary>حدد الموقع الجغرافي والفلكي للعراق.</summary><p>جغرافياً: جنوب غرب آسيا وشمال شرق العالم العربي. فلكياً: بين دائرتي عرض ٢٩° و٣٧° شمالاً، وخطي طول ٣٨° و٤٨° شرقاً.</p></details><details><summary>ما المقصود بالموقع الفلكي؟</summary><p>هو موقع الدولة الذي تحدده دوائر العرض وخطوط الطول.</p></details></section>
+            <section class="subsection"><h3>علل</h3><details><summary>للموقع الجغرافي للعراق أهمية استراتيجية.</summary><p>لأنه يقع على الجسر البري بين آسيا وأفريقيا وأوروبا، وقريب من أقصر الطرق البرية بين المحيط الهندي والبحر المتوسط، كما تمر في سمائه خطوط ملاحة جوية عديدة.</p></details></section>
+            <section class="subsection"><h3>تدريب إضافي</h3><details><summary>فرّق بين الموقع الجغرافي والموقع الفلكي للعراق.</summary><p>الجغرافي يصف موقعه بالنسبة للقارات والدول، أما الفلكي فيحدده بالإحداثيات الفلكية.</p></details><p class="source-note">صياغة تدريبية مبنية على مفاهيم الدرس، وليست نقلاً حرفياً عن ورقة وزارية.</p></section>
+          </div>
+          
+        </div>
+      </article>
+      <article class="topic" id="borders" data-tags="definition questions">
+        <header class="topic-head"><span class="topic-num">٢</span><div><h2 data-editable>حدود العراق والدول المجاورة</h2><p>الاتجاهات، أطوال الحدود، والنسب الواردة في الكتاب</p></div><label class="mark-done"><input type="checkbox" data-progress="borders"> تم</label></header>
+        <div class="topic-body">
+          <p class="summary" data-editable>يحد العراق من الشمال تركيا، ومن الشرق إيران، ومن الجنوب الكويت، ومن الغرب سوريا والأردن والسعودية. وتبلغ الحدود البرية نحو ٣٤٦٢ كم، أما حدوده البحرية على الخليج العربي فتبلغ نحو ٦٠ كم.</p>
+          <div class="subgrid">
+            <section class="subsection"><h3>التعاريف</h3><div class="definition"><p><b>الحدود البرية للعراق:</b> حدود تفصله عن الدول المجاورة؛ تركيا شمالاً، إيران شرقاً، الكويت جنوباً، وسوريا والأردن والسعودية غرباً.</p><p><b>الحدود الطبيعية:</b> مظاهر طبيعية تفصل بين الدول، ومنها جبال طوروس وزاكروس على أجزاء من الحدود العراقية.</p><p><b>الحدود البحرية للعراق:</b> ساحله على الخليج العربي، ويبلغ نحو ٦٠ كم. وتبلغ الحدود البرية نحو ٣٤٦٢ كم، وتتوزع نسبها: إيران ٣٧٫٥٪، السعودية ٢٣٫٥٪، سوريا ١٧٫٤٪، تركيا ١١٪، الكويت ٥٫٦٪، والأردن ٥٪.</p></div></section>
+            <section class="subsection"><h3>سؤال الكتاب</h3><details><summary>صف حدود العراق مع الدول المحيطة به مع ذكر النسب.</summary><p>شمالاً تركيا، شرقاً إيران، جنوباً الكويت، وغرباً سوريا والأردن والسعودية. النسب: إيران ٣٧٫٥٪، السعودية ٢٣٫٥٪، سوريا ١٧٫٤٪، تركيا ١١٪، الكويت ٥٫٦٪، الأردن ٥٪. وله ساحل بحري على الخليج العربي يقارب ٦٠ كم.</p></details><details><summary>رتب الدول المحيطة بالعراق بحسب طول الحدود تصاعدياً.</summary><p>الكويت، الأردن، تركيا، سوريا، السعودية، إيران.</p></details></section>
+            <section class="subsection"><h3>تدريب إضافي</h3><details><summary>ما الدولتان اللتان تقعان غرب العراق؟</summary><p>سوريا والأردن، وتحده السعودية أيضاً من الجهة الغربية والجنوبية الغربية.</p></details><p class="source-note">سؤال مراجعة على معلومات الحدود الواردة في الكتاب.</p></section>
+            <section class="subsection"><h3>علل</h3><details><summary>للحدود دور في استتباب الأمن.</summary><p>لأن ضبط الحدود وتنظيم المرور عبرها يساعدان على حماية سيادة الدولة ومنع التسلل والتهريب.</p></details></section>
+          </div>
+          
+        </div>
+      </article>
+      <article class="topic" id="area" data-tags="definition questions">
+        <header class="topic-head"><span class="topic-num">٣</span><div><h2 data-editable>مساحة العراق وشكله وأهمية موقعه</h2><p>المساحة، شكل الدولة، وأثر الموقع في مكانتها</p></div><label class="mark-done"><input type="checkbox" data-progress="area"> تم</label></header>
+        <div class="topic-body">
+          <p class="summary" data-editable>تقدر مساحة العراق بنحو ٤٣٥٬٠٥٢ كم². ويقترب شكله من الدائري، ويساعد وقوع بغداد في وسطه على تماسك أجزائه وسهولة الاتصال بين الجهات.</p>
+          <div class="subgrid">
+            <section class="subsection"><h3>التعاريف</h3><div class="definition"><p><b>مساحة العراق:</b> مقدار مساحة الدولة، وتبلغ مساحة العراق نحو ٤٣٥٬٠٥٢ كم².</p><p><b>شكل العراق:</b> وصف الهيئة العامة لحدود الدولة؛ شكل العراق قريب من الشكل الدائري، وتقع بغداد في وسطه، مما يسهل الاتصال بين جهاته ويمنحه مزايا سياسية واقتصادية.</p><p><b>أهمية الموقع الجغرافي:</b> قيمة الموقع بسبب موضعه وصلته بالمناطق والطرق المحيطة. تبرز أهمية موقع العراق لوقوعه ضمن الهلال الخصيب والجسر الأرضي بين آسيا وأفريقيا وأوروبا، وعلى أقصر الطرق البرية بين المحيط الهندي والبحر المتوسط، ومرور خطوط الملاحة الجوية في سمائه.</p></div></section>
+            <section class="subsection"><h3>أسئلة الكتاب</h3><details><summary>ما المزايا التي ترتبت على شكل العراق؟</summary><p>يقترب من الشكل الدائري، وتقع بغداد في وسطه، ما يدعم التماسك السياسي والاقتصادي ويقصر زمن الانتقال بين أجزائه.</p></details><details><summary>هل للمساحة علاقة بالأهمية الاقتصادية للدولة؟</summary><p>المساحة الواسعة قد توفر تنوعاً في الموارد والبيئات، لكن الأهمية الاقتصادية ترتبط أيضاً بحسن استثمار الموارد والموقع والسكان.</p></details></section>
+            <section class="subsection"><h3>تدريب إضافي</h3><details><summary>اذكر ثلاثة أسباب لأهمية موقع العراق.</summary><p>موقعه بين قارات العالم القديم، وقوعه ضمن الهلال الخصيب، وقربه من طرق النقل البرية والجوية المهمة.</p></details></section>
+            <section class="subsection"><h3>علل</h3><details><summary>يعد العراق منطقة ارتكاز جغرافي مهمة.</summary><p>لوقوعه على الجسر الأرضي بين آسيا وأفريقيا وأوروبا، ومرور طرق النقل والرحلات الجوية عبر مجاله.</p></details></section>
+          </div>
+          
+        </div>
+      </article>
+      <article class="topic" id="relief" data-tags="definition questions why">
+        <header class="topic-head"><span class="topic-num">٤</span><div><h2 data-editable>أقسام سطح العراق (التضاريس)</h2><p>أربع مناطق رئيسة وتوزيعها من الشمال إلى الجنوب</p></div><label class="mark-done"><input type="checkbox" data-progress="relief"> تم</label></header>
+        <div class="topic-body">
+          <p class="summary" data-editable>يقسم سطح العراق إلى المنطقة الجبلية ٦٪، والمنطقة شبه الجبلية ١٥٪، والسهل الرسوبي ٢٤٪ مع الأهوار والبحيرات، والهضبة الصحراوية الغربية نحو ٥٥٪.</p>
+          <div class="subgrid">
+            <section class="subsection"><h3>من نص الكتاب</h3><div class="definition"><p>التضاريس هي الأشكال السطحية التي تتكون منها القشرة الأرضية من جبال وتلال وهضاب وسهول ووديان.</p><p>تشكل المنطقة الجبلية القسم الشمالي والشمالي الشرقي من العراق، وتشغل نسبة تقدر بنحو ٦٪ من مساحة العراق الكلية، وتمتد على شكل هلال يمتد من الشمال الغربي إلى الجنوب الشرقي، وتتكون هذه المنطقة من سلسلتين جبليتين. تحاذي منطقة الجبال العالية الارتفاع الحدود السياسية بين تركيا من الشمال وإيران من الشمال الشرقي، وتتميز بكونها جبالاً التوائية وصخورها من النوع البركاني والمتحولة، ويتراوح ارتفاعها بين ٢١٠٠ و٣٦٠٠ م فوق مستوى سطح البحر. وتضم أعلى قمة جبلية تتمثل بجبل هلكرد البالغ ارتفاعه أكثر من ٣٦٠٠ م ضمن سلسلة جبال حصاروست، وأيضاً جبلي قنديل وسرميدان. أما منطقة الجبال قليلة الارتفاع فتقع جنوب الجبال العالية، ومن أهم جبالها بيخير وعقرة داغ وحرير وبرنان، ويتراوح ارتفاع قممها بين ١٤٠٠ و٢١٠٠ م.</p><p>تتميز المنطقة الجبلية بكونها أحد أهم مصادر المياه في العراق نظراً لتراكم الثلوج على قمم جبالها ووفرة أمطارها التي تتجاوز ١٠٠٠ ملم سنوياً، فضلاً عن كونها تضم أهم الروافد المغذية لنهر دجلة. كما تضم سهول السندي (زاخو) وشهرزور ورانية، وهضاب بنجوين وبشدر وجوارته.</p><p>تقع المنطقة شبه الجبلية إلى الجنوب من المنطقة الجبلية، وتعد منطقة انتقالية بين السهول الواطئة الارتفاع في الجنوب والجبال العالية في أقصى الشمال والشمال الشرقي، وتشغل نحو ١٥٪ من مساحة العراق الكلية. ويغلب على مظاهر سطحها التنوع في التضاريس كالتلال والهضاب والسهول، وتمتد على شكل هلال من الشمال الغربي إلى الجنوب الشرقي، وبارتفاع يتراوح بين ٢٠٠ و١٠٠٠ م.</p><p>تشكل منطقة التلال الحدود الجنوبية للمنطقة شبه الجبلية، وتتألف من تلال لا يتجاوز ارتفاعها ١٠٠٠ م، ومنها حمرين ومكحول ومقلوب وأوانه داغ وكيالبات ونفط داغ وكاني دوملان. أما الهضاب فهي أقل ارتفاعاً وتموجاً من التلال، وتتكون من هضبة كركوك في الشرق وهضبة الموصل في الغرب، ويفصل بينهما سهل أربيل. وتنحصر معظم السهول بين التلال ومنطقة الهضاب، ومن أهمها الحويجة وديبكة وأربيل.</p><p>تشغل مساحة السهل الرسوبي، بضمنها مساحة الأهوار والبحيرات، نحو ٢٤٪ من مساحة العراق الكلية. ويمتد على شكل مستطيل يبلغ طوله نحو ٦٠٠ كم وعرضه ٢٠٥ كم، وتنحصر حدوده بين المنطقة شبه الجبلية شمالاً والهضبة الصحراوية غرباً وجبال زاكروس شرقاً والخليج العربي جنوباً. وقد تكون نتيجة الترسبات التي نقلتها مياه دجلة والفرات، فضلاً عن الكارون والكرخة، ويتميز بقلة انحداره وانبساط معظم أراضيه، الأمر الذي أدى إلى صعوبة تصريف المياه.</p><p>تشغل الهضبة الصحراوية القسم الغربي والجنوبي الغربي من العراق، وتعد من أكبر المناطق التضاريسية مساحة، إذ تشغل حوالي ٢٧٠٬٠٠٠ كم² وبنسبة تقدر بنحو ٥٥٪ من مجموع مساحة العراق. ويتصف سطحها بكونه متموجاً، ويتراوح ارتفاعه بين ٣٠٠ و٩٠٠ م، وتتدرج أراضيها بالارتفاع كلما اتجهنا نحو الغرب والشمال الغربي. ويضم سطحها ودياناً كوادي حوران والأبيض والخر، ومنخفضات كالحبانية والرزازة والثرثار.</p><p>الأهوار والمستنقعات مسطحات مائية تغطي الأراضي المنخفضة الواقعة في الأقسام الوسطى والجنوبية من السهل الرسوبي، وتزيد مساحتها على ٢٠٬٠٠٠ كم²، وتكون على شكل مثلث تمثل مدن العمارة والناصرية والبصرة رؤوسه الثلاثة. وتزداد مساحة الأهوار المغطاة بالمياه في أواخر الشتاء وخلال الربيع وتتقلص أيام الصيف.</p></div></section>
+            <section class="subsection"><h3>أسئلة الكتاب</h3><details><summary>عدد أقسام سطح العراق.</summary><p>المنطقة الجبلية، المنطقة شبه الجبلية (المتموجة)، السهل الرسوبي، والهضبة الصحراوية الغربية.</p></details><details><summary>بماذا تتميز المنطقة الجبلية؟</summary><p>قمم مرتفعة وأمطار وثلوج غزيرة، وهي من أهم مصادر المياه، وتضم سهولاً وهضاباً صالحة للزراعة والرعي.</p></details><details><summary>ما أقسام المنطقة شبه الجبلية؟</summary><p>التلال، والهضاب، والسهول. من أمثلتها تلال حمرين ومكحول، وهضبتا كركوك والموصل، وسهل أربيل والحويجة وديبكة.</p></details></section>
+            <section class="subsection"><h3>أسئلة مراجعة</h3><details><summary>كيف تكون السهل الرسوبي؟</summary><p>تكون من ترسبات حملتها مياه دجلة والفرات والأنهار المنحدرة من المرتفعات الشرقية، فملأت المنطقة المنخفضة.</p></details><details><summary>اذكر أمثلة من مظاهر سطح الهضبة الغربية.</summary><p>الوديان مثل حوران والأبيض والخر، والمنخفضات مثل الحبانية والرزازة والثرثار.</p></details></section>
+            <section class="subsection"><h3>علل</h3><details><summary>تتعرض الهضبة الصحراوية لعوامل التعرية الشديدة.</summary><p>لفقر غطائها النباتي وسيادة الجفاف، فتؤثر فيها الرياح والمياه الجارية بالنحت والإرساب.</p></details><details><summary>يصعب تصريف المياه في السهل الرسوبي.</summary><p>لانبساطه وقلة انحداره، ولأن ارتفاعه يقترب من مستوى سطح البحر في الجنوب.</p></details></section>
+          </div>
+          
+        </div>
+      </article>
+      <article class="topic" id="climate" data-tags="definition questions why">
+        <header class="topic-head"><span class="topic-num">٥</span><div><h2 data-editable>الطقس والمناخ وعناصر المناخ</h2><p>العوامل المؤثرة والحرارة والرياح والأمطار</p></div><label class="mark-done"><input type="checkbox" data-progress="climate"> تم</label></header>
+        <div class="topic-body">
+          <p class="summary" data-editable>مناخ العراق قاري: حار جاف صيفاً ومعتدل ممطر شتاءً. وأهم العوامل المؤثرة فيه الموقع الفلكي، وبعد المسطحات المائية، والتضاريس.</p>
+          <div class="subgrid">
+            <section class="subsection"><h3>التعريفان الأساسيان</h3><div class="definition"><p><b>الطقس:</b> هو حالة الجو من حيث (درجات الحرارة والضغط الجوي والرياح والأمطار) لمكان محدد ولمدة قصيرة (ساعة، يوم، أسبوع).</p><p><b>المناخ:</b> هو وصف حالة الجو من حيث عناصره (درجة الحرارة والضغط الجوي والرياح والأمطار) لمكان محدد، ولكن لمدة زمنية طويلة قد تكون شهراً أو سنة أو عدة سنوات.</p></div></section>
+            <section class="subsection"><h3>أسئلة الكتاب</h3><details><summary>ما العوامل المؤثرة في مناخ العراق؟</summary><p>الموقع الفلكي بالنسبة لدوائر العرض، المسطحات المائية، والتضاريس.</p></details><details><summary>متى تسقط معظم أمطار العراق؟</summary><p>في الشتاء، وتمتد عادة من تشرين الثاني حتى نيسان، وتقل أو تنعدم صيفاً.</p></details><details><summary>ما سبب تباين الحرارة والأمطار بين شمال العراق وجنوبه؟</summary><p>اختلاف دوائر العرض والارتفاع والتضاريس، وبعد المناطق الجنوبية عن المؤثرات المائية.</p></details></section>
+            <section class="subsection"><h3>تدريب إضافي</h3><details><summary>لماذا تتباين كمية الأمطار بين المناطق العراقية؟</summary><p>تزداد باتجاه الشمال الشرقي والجبال بسبب الارتفاع وصعود الرياح الرطبة، وتقل في الوسط والجنوب الغربي.</p></details></section>
+            <section class="subsection"><h3>علل</h3><details><summary>يعد الموقع الفلكي أكثر العوامل تأثيراً في المناخ.</summary><p>لأنه يحدد زاوية سقوط أشعة الشمس وطول النهار، وبذلك يؤثر في درجات الحرارة.</p></details><details><summary>ضعف تأثير البحار المحيطة بالعراق.</summary><p>لبعد معظمها ووجود سلاسل جبلية تعترض المؤثرات الجوية القادمة منها.</p></details><details><summary>انعدام سقوط الأمطار صيفاً.</summary><p>لسيادة الضغط المرتفع المداري وقلة الرطوبة النسبية.</p></details></section>
+          </div>
+          
+        </div>
+      </article>
+      <article class="topic" id="regions" data-tags="definition questions">
+        <header class="topic-head"><span class="topic-num">٦</span><div><h2 data-editable>الأقاليم المناخية في العراق</h2><p>المتوسطي، السهوب، والصحراوي</p></div><label class="mark-done"><input type="checkbox" data-progress="regions"> تم</label></header>
+        <div class="topic-body">
+          <p class="summary" data-editable>ينقسم مناخ العراق إلى ثلاثة أقاليم: مناخ البحر المتوسط في الشمال الشرقي، مناخ السهوب في المنطقة المتموجة، والمناخ الصحراوي في السهل الرسوبي والهضبة الغربية.</p>
+          <div class="subgrid">
+            <section class="subsection"><h3>من نص الكتاب</h3><div class="definition"><p>يمكن أن نعرف الإقليم بأنه منطقة محددة على سطح الأرض لها خصائص طبيعية أو بشرية تختلف عن المناطق المجاورة لها، وغالباً ما تتطابق الأقاليم المناخية في توزيعها بدرجة كبيرة مع تضاريس السطح وعناصر المناخ (الحرارة، الضغط الجوي، الرياح، الأمطار)، ويمكن أن نقسم مناخ العراق إلى ثلاثة أقاليم.</p><p>يسود إقليم مناخ البحر المتوسط في شمال شرق العراق ضمن المنطقة الجبلية. يتميز الشتاء فيه بكونه بارداً تسقط فيه الثلوج على قمم الجبال وتنخفض درجة الحرارة إلى ما دون الصفر المئوي، وأمطاره غزيرة تتراوح بين ٧٥٠ و١٠٠٠ ملم سنوياً، أما صيفه فجاف معتدل تتراوح حرارته بين ٣٠ و٣٥ درجة مئوية.</p><p>يسود مناخ السهوب في المنطقة شبه الجبلية (المتموجة)، وهو مناخ انتقالي بين مناخ البحر المتوسط شمالاً والمناخ الصحراوي جنوباً. يتميز الشتاء بأنه أقل برودة من مناخ البحر المتوسط وأمطاره أكثر من ٣٠٠ ملم سنوياً، أما صيفه فحار جاف تتراوح حرارته بين ٣٨ و٤٠ درجة مئوية.</p><p>يسود المناخ الصحراوي ضمن منطقة السهل الرسوبي والهضبة الصحراوية الغربية، وهو أوسع الأقاليم المناخية من حيث المساحة. يتميز بأنه أشد حرارة وأقل مطراً من الإقليمين السابقين؛ وتتراوح درجات الحرارة صيفاً بين ٤٤ و٤٨ درجة مئوية، أما أمطاره فتتراوح بين ٥٠ و٢٠٠ ملم.</p></div></section>
+            <section class="subsection"><h3>أسئلة الكتاب</h3><details><summary>عدد الأقاليم المناخية في العراق.</summary><p>إقليم مناخ البحر المتوسط، إقليم مناخ السهوب، وإقليم المناخ الصحراوي.</p></details><details><summary>ميز بين الإقليم الصحراوي وإقليم البحر المتوسط.</summary><p>المتوسطي أبرد وأكثر مطراً، خاصة شتاءً؛ أما الصحراوي فأشد حرارة وأقل مطراً.</p></details></section>
+            <section class="subsection"><h3>مقارنة سريعة</h3><ul><li>المتوسطي: مطر سنوي ٧٥٠–١٠٠٠ ملم؛ حرارة الصيف ٣٠–٣٥°.</li><li>السهوب: أكثر من ٣٠٠ ملم؛ حرارة الصيف ٣٨–٤٠°.</li><li>الصحراوي: نحو ٥٠–٢٠٠ ملم؛ حرارة الصيف ٤٤–٤٨°.</li></ul></section>
+            <section class="subsection"><h3>تدريب إضافي</h3><details><summary>لماذا يعد إقليم السهوب انتقالياً؟</summary><p>لأنه يقع بين مناخ البحر المتوسط شمالاً والمناخ الصحراوي جنوباً، ويجمع صفات وسطية بينهما.</p></details></section>
+          </div>
+          
+        </div>
+      </article>
+      <article class="topic" id="plants" data-tags="definition questions why">
+        <header class="topic-head"><span class="topic-num">٧</span><div><h2 data-editable>النبات الطبيعي ونطاقاته</h2><p>النطاقات الخمسة وفوائد النبات</p></div><label class="mark-done"><input type="checkbox" data-progress="plants"> تم</label></header>
+        <div class="topic-body">
+          <p class="summary" data-editable>يتوزع النبات الطبيعي في خمسة نطاقات: الغابات والأعشاب الجبلية، السهوب، ضفاف الأنهار، الأهوار والمستنقعات، والنباتات الصحراوية. تقل كثافته جنوباً مع قلة الأمطار.</p>
+          <div class="subgrid">
+            <section class="subsection"><h3>من نص الكتاب</h3><div class="definition"><p>يعرف النبات الطبيعي بأنه النبات الذي ينمو دون تدخل الإنسان في إنباته، وتتباين مناطق توزيعه في أنحاء وطننا، إذ عادة ما يتطابق توزيعه مع الأقاليم المناخية والتضاريسية، فتزداد كثافته في المناطق الشمالية نظراً لزيادة كمية الأمطار وتقل كلما اتجهنا جنوباً نظراً لقلتها. ويساهم النبات الطبيعي في تلطيف الجو ويمنع انجراف التربة، فضلاً عن أهميته في رعي الحيوانات، ويمكن تقسيم مناطق توزيعه في العراق إلى خمسة نطاقات نباتية.</p><p>يقع نطاق الغابات والأعشاب الجبلية في الأقسام الشمالية الشرقية ضمن منطقة الجبال العالية، وتتميز نباتاته بكونها دائمة الخضرة، ويتمثل النبات الطبيعي فيه بسيادة الأشجار والغابات، ولاسيما غابات البلوط التي تشكل القسم الأكبر.</p><p>يشغل نطاق السهوب نحو ١٥٪ من مساحة العراق، ويقع في المنطقة شبه الجبلية (المتموجة) ضمن مناخ السهوب. ويتمثل النبات الطبيعي بالحشائش والأعشاب وبعض النباتات البصلية والشوكية، وتقسم نباتاته إلى نباتات السهوب الجافة كالعاقول ونباتات السهوب الرطبة كالكعوب.</p><p>يتوزع نطاق ضفاف الأنهار على ضفاف مجرى نهري دجلة وروافده والفرات وفروعهما، ويتكون النبات الطبيعي من أشجار وشجيرات وحشائش تنمو على ضفاف الأنهار والجزر النهرية، ومن نباتاته الصفصاف والحلفا وعرق السوس.</p><p>يقع نطاق نباتات الأهوار والمستنقعات في القسم الجنوبي من السهل الرسوبي، ويتميز النبات الطبيعي فيه بكونه كثيفاً ومتعدد الأنواع، ومن أهمها القصب والبردي، ويستخدم القصب والبردي كوقود وفي صناعة الحصران والورق، فضلاً عن استعمالهما علفاً للحيوانات.</p><p>يغطي نطاق النباتات الصحراوية حوالي ٧٠٪ من مساحة العراق، وقد كيفت نباتاته نفسها لتقاوم الجفاف الذي يدوم حوالي ثمانية أشهر. وتقسم النباتات الصحراوية إلى نباتات حولية فصلية تنمو خلال الموسم الملائم، ونباتات معمرة دائمة كيفت نفسها لمقاومة الجفاف والحرارة العالية.</p></div></section>
+            <section class="subsection"><h3>النطاقات الخمسة</h3><ul><li>الغابات والأعشاب الجبلية: بلوط وأعشاب دائمة الخضرة.</li><li>السهوب: حشائش وأعشاب؛ منها العاقول والكعوب.</li><li>ضفاف الأنهار: الصفصاف والحلفا وعرق السوس.</li><li>الأهوار: القصب والبردي.</li><li>النباتات الصحراوية: حولية ومعمرة، وتغطي قرابة ٧٠٪ من المساحة.</li></ul></section>
+            <section class="subsection"><h3>أسئلة الكتاب</h3><details><summary>عدد نطاقات النبات الطبيعي في العراق.</summary><p>الغابات والأعشاب الجبلية، السهوب، ضفاف الأنهار، الأهوار والمستنقعات، والنباتات الصحراوية.</p></details><details><summary>ما فوائد نباتات الأهوار؟</summary><p>تستعمل القصب والبردي وقوداً، وفي صناعة الحصران والورق، كما تستعمل علفاً للحيوانات.</p></details></section>
+            <section class="subsection"><h3>أسئلة مراجعة منشورة</h3><details><summary>هل يتطابق توزيع النباتات الصحراوية مع الإقليم الصحراوي؟ ولماذا؟</summary><p>يتطابق إلى حد كبير، لأن الجفاف وارتفاع الحرارة يحددان انتشار النباتات المتكيفة مع البيئة الصحراوية.</p></details><p class="source-note">سؤال مراجعة متداول ضمن مواد الجغرافية المنشورة؛ أُدرج للتدريب لا بوصفه سؤالاً وزارياً بسنة محددة.</p></section>
+            <section class="subsection"><h3>علل</h3><details><summary>تتباين أنواع النباتات الطبيعية في العراق.</summary><p>لتباين المناخ والتضاريس وكمية الأمطار من منطقة إلى أخرى.</p></details><details><summary>تسود الغابات في الشمال الشرقي.</summary><p>لزيادة الأمطار واعتدال الحرارة مقارنة بالمناطق الجنوبية والجافة.</p></details></section>
+          </div>
+          
+        </div>
+      </article>
+      <article class="topic" id="water" data-tags="definition questions why">
+        <header class="topic-head"><span class="topic-num">٨</span><div><h2 data-editable>الموارد المائية في العراق</h2><p>الأمطار والثلوج، المياه السطحية، والمياه الجوفية</p></div><label class="mark-done"><input type="checkbox" data-progress="water"> تم</label></header>
+        <div class="topic-body">
+          <p class="summary" data-editable>تصنف الموارد المائية بحسب مصدرها إلى مياه الأمطار والثلوج، والمياه السطحية، والمياه الجوفية. وتتباين كمياتها موسمياً ومكانياً، وتغذي الأمطار والثلوج الأنهار والموارد الأخرى.</p>
+          <div class="subgrid">
+            <section class="subsection"><h3>من نص الكتاب</h3><div class="definition"><p>اشتهر وطننا العراق بوفرة مياهه حتى اقترنت تسميته ببلاد ما بين النهرين أو أرض الرافدين، إشارة إلى نهري دجلة والفرات. وتقسم الموارد المائية بحسب مصدرها إلى مياه الأمطار والثلوج، والمياه السطحية، والمياه الجوفية.</p><p>تعد الأمطار والثلوج المصدر الرئيس لتغذية الأنهار والموارد المائية الأخرى. يكثر سقوط الأمطار خلال فصلي الشتاء والربيع ويندر في الصيف، وتزيد كمياتها على المنطقة الجبلية عن ١٠٠٠ ملم سنوياً، في حين تقل في المناطق الوسطى والجنوبية عن ٢٥٠ ملم سنوياً.</p><p>يقصد بالمياه السطحية المياه الجارية على سطح الأرض، وتشمل الأنهار دائمة الجريان بمياه دجلة والفرات وشط العرب وفروعها وروافدها، والأودية الموسمية والبحيرات الطبيعية. تزداد كميتها عادة في الربيع (موسم الفيضان) وتقل في الصيف (موسم الصيهود)، وتتفاوت من سنة لأخرى تبعاً لاختلاف الأمطار والثلوج عند المنابع.</p><p><b>المياه الجوفية:</b> المصدر الثالث للموارد المائية في العراق، وتُستعمل لتعويض نقص المياه في المناطق التي تقل فيها الأمطار.</p></div></section>
+            <section class="subsection"><h3>أسئلة الكتاب</h3><details><summary>عدد مصادر الموارد المائية في العراق.</summary><p>مياه الأمطار والثلوج، المياه السطحية، والمياه الجوفية.</p></details><details><summary>متى تزداد المياه السطحية ومتى تقل؟</summary><p>تزداد عادة في الربيع موسم الفيضان، وتقل في الصيف موسم الصيهود.</p></details></section>
+            <section class="subsection"><h3>تدريب من موقع تعليمي</h3><details><summary>للمياه الجوفية أهمية كبيرة في المناطق ذات المناخ الصحراوي. وضح.</summary><p>لأنها مورد مائي يمكن الإفادة منه في المناطق التي تقل فيها الأمطار والمياه السطحية، مع ضرورة ترشيد استخدامها.</p></details><p class="source-note">سؤال مراجعة منشور في موقع دراستي، وليس منسوباً إلى دور وزاري بعينه. <a href="https://data2.derasaty.net/" target="_blank" rel="noreferrer">موقع دراستي</a></p></section>
+            <section class="subsection"><h3>علل</h3><details><summary>تتباين كميات المياه السطحية من سنة إلى أخرى.</summary><p>لاختلاف كميات الأمطار والثلوج الساقطة عند المنابع الرئيسة.</p></details><details><summary>تعد الأمطار والثلوج مصدراً رئيساً لتغذية الأنهار.</summary><p>لأن مياهها تجري إلى الأنهار أو تتسرب لتغذي الموارد المائية الأخرى.</p></details></section>
+          </div>
+          
+        </div>
+      </article>
+      <article class="topic" id="tigris" data-tags="definition questions why">
+        <header class="topic-head"><span class="topic-num">٩</span><div><h2 data-editable>نهر دجلة وروافده وتفرعاته</h2><p>المنابع، مسار النهر، الروافد، والجداول</p></div><label class="mark-done"><input type="checkbox" data-progress="tigris"> تم</label></header>
+        <div class="topic-body">
+          <p class="summary" data-editable>ينبع دجلة من المرتفعات جنوب شرقي تركيا، ويدخل العراق عند فيشخابور. يبلغ طوله الكلي نحو ١٩٠٠ كم، وتغذيه روافد من الشرق أهمها الخابور والزاب الكبير والزاب الصغير والعظيم وديالى.</p>
+          <div class="subgrid">
+            <section class="subsection"><h3>من نص الكتاب</h3><div class="definition"><p>ينبع نهر دجلة من المرتفعات الواقعة جنوب شرق تركيا، ويبلغ طوله الكلي نحو ١٩٠٠ كم. يتكون من منابع عدة في تركيا؛ وبالتقاء بطمان صو وبوتان صو يكونان نهر دجلة. يجري النهر باتجاه جنوبي شرقي حتى يدخل الأراضي العراقية عند قرية فيشخابور.</p><p>يلتقي دجلة برافد الخابور، ثم برافد الزاب الكبير جنوب الموصل، وهو من أهم روافده إذ يسهم بنحو ٣٣٪ من مياه دجلة. وإلى الجنوب من الشرقاط يلتقي برافد الزاب الصغير الذي ينبع من الأراضي الإيرانية ويسهم بنحو ١٧٪ من مياهه.</p><p>وعند مدينة الضلوعية يلتقي دجلة برافد العظيم، وإلى الجنوب من بغداد يلتقي برافد ديالى الذي يتكون من أبي سيروان من الأراضي الإيرانية وتانجرو من الأراضي العراقية.</p><p>عند سدة الكوت يتفرع دجلة من ضفته اليمنى إلى جدولي الغراف والدجيلة، اللذين يرويان الأراضي الزراعية بين واسط وذي قار. وعند العمارة يتفرع إلى جداول البتيرة والمجر الكبير والمشرح والكحلاء.</p><p>يتميز مجرى دجلة بين شمال بغداد والكوت بكثرة تعرجاته بسبب قلة انحدار الأراضي وبطء جريان المياه، فتزداد الترسبات والجزر النهرية. وبدأت تركيا بتشييد سدود على دجلة ضمن مشروع الغاب، وآخرها سد إليسو الذي بدأ تشغيله في كانون الثاني ٢٠١٨.</p></div></section>
+            <section class="subsection"><h3>أسئلة الكتاب</h3><details><summary>تتكون المنطقة الجبلية من سلسلتين، وضحهما مع الأمثلة.</summary><p>جبال عالية مثل هلكرد وقنديل وسرميدان، وجبال قليلة الارتفاع مثل بيخير وعقرة داغ وحرير وبرنان.</p></details><details><summary>لماذا تجري روافد دجلة من جهة الشرق؟</summary><p>لوقوع المرتفعات التي تنبع منها شرق مجرى دجلة، ولاسيما جبال زاكروس.</p></details></section>
+            <section class="subsection"><h3>مسار دجلة</h3><ul><li>يدخل العراق عند قرية فيشخابور.</li><li>يلتقي الخابور ثم الزاب الكبير جنوب الموصل والزاب الصغير قرب الشرقاط.</li><li>يلتقي العظيم قرب الضلوعية وديالى جنوب بغداد.</li><li>يتفرع قرب الكوت، ثم يلتقي الفرات عند القرنة.</li></ul></section>
+            <section class="subsection"><h3>علل وتدريب</h3><details><summary>تكثر تعرجات دجلة بين شمال بغداد والكوت.</summary><p>لقلة انحدار الأرض وبطء جريان المياه، ما يزيد الترسبات والجزر النهرية.</p></details><details><summary>ما أهمية نهر دجلة للعراق؟</summary><p>مصدر للمياه السطحية، ويسهم في الري والزراعة والاستقرار البشري، وتستفيد منه المدن الواقعة على مجراه.</p></details></section>
+          </div>
+          
+        </div>
+      </article>
+      <article class="topic" id="euphrates" data-tags="definition questions why">
+        <header class="topic-head"><span class="topic-num">١٠</span><div><h2 data-editable>نهر الفرات وشط العرب</h2><p>المنابع، الفروع، الالتقاء، والمصب</p></div><label class="mark-done"><input type="checkbox" data-progress="euphrates"> تم</label></header>
+        <div class="topic-body">
+          <p class="summary" data-editable>ينبع الفرات من المرتفعات الشرقية في تركيا من فراتي صو ومراد صو، ويمر بسوريا ثم يدخل العراق قرب القائم. يلتقي بدجلة عند القرنة، ويكوّن النهران شط العرب الذي يصب في الخليج العربي.</p>
+          <div class="subgrid">
+            <section class="subsection"><h3>من نص الكتاب</h3><div class="definition"><p>ينبع نهر الفرات من المرتفعات الشرقية في تركيا، ويتكون من منابع عدة أهمها فرات صو ومراد صو، اللذان يلتقيان عند مدينة كيبان ويكونان النهر. يجري باتجاه جنوبي شرقي حتى يدخل الأراضي العربية في سوريا بالقرب من جرابلس، ثم يدخل الأراضي العراقية عند حصيبة في قضاء القائم.</p><p>يدخل الفرات السهل الرسوبي عند الرمادي، ويتفرع عند سدة الهندية إلى شط الحلة وشط الهندية. ومن فروعه شط الدغارة وشط الديوانية، وشط الكوفة وشط الشامية، ثم شط العطشان والسبيل. وبالقرب من سوق الشيوخ يتفرع إلى جداول تسمى ذنائب الفرات وتنتهي بهور الحمار.</p><p>يلتقي المجرى الشمالي للفرات بنهر دجلة عند القرنة في محافظة البصرة، ويلتقي المجرى الجنوبي بشط العرب عند كرمة علي.</p><p>يطلق اسم شط العرب على النهر الممتد بين القرنة والخليج العربي، ويتكون من التقاء دجلة والفرات. يبلغ طوله نحو ١٩٠ كم، ويصب فيه نهر الكارون الآتي من الأراضي الإيرانية، ويرسب الكارون كميات كبيرة من الطمي مما يعرقل الملاحة. ويتأثر شط العرب بظاهرتي المد والجزر اللتين تتكرران مرتين يومياً.</p></div></section>
+            <section class="subsection"><h3>أسئلة الكتاب</h3><details><summary>لماذا لا توجد روافد مهمة للفرات داخل العراق؟</summary><p>لأن النهر يجري في الهضبة الغربية الجافة، وتقل الأمطار في حوضه العراقي، كما أن انحدار الأرض لا يتيح روافد دائمة كبيرة.</p></details><details><summary>فسر كثرة تفرعات الفرات في مناطق الفرات الأوسط.</summary><p>لأن مجراه يمر في سهل رسوبي منبسط، فتتفرع منه جداول لري الأراضي الزراعية.</p></details><details><summary>اذكر روافد الفرات في سوريا.</summary><p>الساجور، والبليخ، والخابور.</p></details></section>
+            <section class="subsection"><h3>الفروع والمواقع</h3><ul><li>من فروع الفرات: شط الحلة وشط الهندية، ثم شط الكوفة وشط الشامية.</li><li>تتفرع قرب سوق الشيوخ ذنائب الفرات المتجهة نحو هور الحمار.</li><li>يلتقي مجرى الفرات الشمالي بدجلة في القرنة، ويلتقي المجرى الجنوبي بشط العرب عند كرمة علي.</li><li>يدخل الكارون إلى شط العرب من الأراضي الإيرانية.</li><li>يبلغ طول شط العرب نحو ١٩٠ كم، ويتسع عند المصب لأكثر من كيلومترين ويضيق عند البصرة إلى نحو كيلومتر.</li></ul></section>
+            <section class="subsection"><h3>علل وأسئلة إضافية</h3><details><summary>يعيق الطمي الملاحة في شط العرب.</summary><p>لأن نهر الكارون يرسب كميات من الطمي في المجرى.</p></details><details><summary>تكثر الجزر والتعرجات في الأنهار.</summary><p>بسبب بطء الجريان وقلة الانحدار، وما ينتج عنهما من ترسبات في المجرى.</p></details><details><summary>ما أهمية المد والجزر في شط العرب؟</summary><p>يساعد المد على رفع منسوب المياه وإرواء الأراضي الزراعية، لكن ارتفاع تركيز الأملاح قد يسبب ترسبها في التربة.</p></details><details><summary>اقترح وسائل للمحافظة على مياه الأنهار من التلوث.</summary><p>منع طرح النفايات والمياه الملوثة، ومعالجة مياه الصرف، ومراقبة مصادر التلوث، ونشر الوعي بأهمية حماية الأنهار.</p></details></section>
+          </div>
+          
+        </div>
+      </article>
+    </div>
+    <div class="empty-state" id="emptyState">ماكو موضوع يطابق البحث الحالي.</div>
+    <section class="exam-section" id="ministry">
+      <h2>نسخ الأسئلة الوزارية ومصادرها</h2>
+      <p>هذه مراجع لنسخ الامتحانات كما ظهرت في مواقع تعليمية. افتح النسخة الأصلية لمراجعة نص السؤال كاملاً.</p>
+      <div class="exam-notice">الأسئلة التالية مفرغة من صور الأوراق المرتبطة بالمصادر، وأجوبتها ظاهرة مباشرة للمراجعة. صياغة الأجوبة نموذجية ومختصرة اعتماداً على الكتاب المرفق.</div>
+      <div class="exam-grid">
+        <article class="exam-item"><div class="exam-meta"><span class="year-pill">٢٠٢٤</span><span class="round-pill">الدور الأول · ٢٠٢٣–٢٠٢٤</span></div><h3>الاجتماعيات · الثالث المتوسط</h3><details><summary>املأ الفراغ: يعد المنخفض الجوي القادم من ____ السبب الرئيس لتساقط الأمطار في العراق.</summary><p>البحر المتوسط.</p></details><details><summary>قارن بين إقليم مناخ البحر المتوسط والإقليم الصحراوي.</summary><p>إقليم البحر المتوسط يسود شمال شرق العراق ضمن المنطقة الجبلية؛ شتاؤه بارد، وتتساقط الثلوج على قمم الجبال، وأمطاره غزيرة تتراوح بين ٧٥٠ و١٠٠٠ ملم سنوياً، وصيفه جاف معتدل تتراوح حرارته بين ٣٠ و٣٥°م. أما الإقليم الصحراوي فيسود السهل الرسوبي والهضبة الصحراوية الغربية، وهو أوسع الأقاليم مساحة؛ أشد حرارة وأقل مطراً، وتتراوح حرارة الصيف بين ٤٤ و٤٨°م والأمطار بين ٥٠ و٢٠٠ ملم.</p></details><a href="https://iraqedu.net/%D8%A7%D8%B3%D8%A6%D9%84%D8%A9-%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A%D8%A7%D8%AA-%D8%AF%D9%88%D8%B1-%D8%A7%D9%88%D9%84-%D8%AB%D8%A7%D9%84%D8%AB-%D9%85%D8%AA%D9%88%D8%B3%D8%B7-2024/" target="_blank" rel="noreferrer">عرض نسخة الامتحان</a></article>
+        <article class="exam-item"><div class="exam-meta"><span class="year-pill">٢٠٢٥</span><span class="round-pill">الدور الأول · ٢٠٢٤–٢٠٢٥</span></div><h3>الاجتماعيات · الثالث المتوسط</h3><details><summary>علل: يفضل السكان عادة السكن في المناطق السهلية.</summary><p>لانبساط السهول وسهولة النقل والعمران، وتوافر المياه والتربة الملائمة للزراعة في أجزاء واسعة منها.</p></details><details><summary>علل: بالرغم من وجود مسطحات مائية تحيط بالعراق، يكاد تأثيرها المناخي يكون محدوداً.</summary><p>لبعد معظمها ووجود سلاسل جبلية تعترض المؤثرات الجوية، مع بقاء تأثير محدود لبعض المنخفضات في الشتاء.</p></details><a href="https://iraqedu.net/%D8%A7%D8%B3%D8%A6%D9%84%D8%A9-%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A%D8%A7%D8%AA-%D8%AF%D9%88%D8%B1-%D8%A7%D9%88%D9%84-%D8%AB%D8%A7%D9%84%D8%AB-%D9%85%D8%AA%D9%88%D8%B3%D8%B7-2025/" target="_blank" rel="noreferrer">عرض نسخة الامتحان</a></article>
+        <article class="exam-item"><div class="exam-meta"><span class="year-pill">٢٠٢٦</span><span class="round-pill">الدور الأول · ٢٠٢٥–٢٠٢٦</span></div><h3>الاجتماعيات · الثالث المتوسط</h3><details><summary>عرّف: هلكرد، هور الحمار، المناخ.</summary><p><b>هلكرد:</b> أعلى قمة جبلية في العراق، تقع ضمن سلسلة جبال حصاروست ويتجاوز ارتفاعها ٣٦٠٠ م. <b>هور الحمار:</b> من الأهوار الواقعة في القسم الجنوبي من السهل الرسوبي. <b>المناخ:</b> وصف حالة الجو من حيث عناصره، وهي الحرارة والضغط الجوي والرياح والأمطار، في مكان محدد خلال مدة زمنية طويلة.</p></details><details><summary>عدد نطاقات النباتات الطبيعية في العراق.</summary><p>النطاقات خمسة: الغابات والأعشاب الجبلية في الشمال الشرقي؛ السهوب في المنطقة شبه الجبلية؛ نباتات ضفاف دجلة وروافده والفرات وفروعه؛ نباتات الأهوار والمستنقعات في جنوب السهل الرسوبي؛ والنباتات الصحراوية التي تغطي نحو ٧٠٪ من مساحة العراق.</p></details><details><summary>علل: يعد الزاب الكبير من أهم روافد نهر دجلة.</summary><p>لأنه يسهم بنحو ٣٣٪ من مياه نهر دجلة، ويعد من أهم الروافد المغذية له.</p></details><a href="https://iraqedu.net/%D8%A7%D8%B3%D8%A6%D9%84%D8%A9-%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A%D8%A7%D8%AA-%D8%AF%D9%88%D8%B1-%D8%A7%D9%88%D9%84-%D8%AB%D8%A7%D9%84%D8%AB-%D9%85%D8%AA%D9%88%D8%B3%D8%B7-26/" target="_blank" rel="noreferrer">عرض نسخة الامتحان</a></article>
+        <article class="exam-item"><div class="exam-meta"><span class="year-pill">٢٠٢٣</span><span class="round-pill">الدور الأول · ٢٠٢٢–٢٠٢٣</span></div><h3>الاجتماعيات · الثالث المتوسط</h3><details><summary>علل: يعد الموقع الفلكي من أكثر العوامل المؤثرة في مناخ العراق.</summary><p>لأنه يحدد زاوية سقوط أشعة الشمس وطول النهار، فيؤثر في درجات الحرارة، كما يحدد موقع العراق بالنسبة لدوائر العرض.</p></details><details><summary>علل: تكثر تعرجات مجرى دجلة بين شمال بغداد والكوت.</summary><p>بسبب قلة انحدار الأراضي وبطء جريان المياه، فتزداد الترسبات والجزر النهرية في المجرى.</p></details><details><summary>ما الأهوار والمستنقعات؟ وبين أهميتها في جنوب العراق.</summary><p>الأهوار والمستنقعات مسطحات مائية تقع في الأراضي المنخفضة من السهل الرسوبي. وتعد خزانات طبيعية للمياه، وتساعد على تقليل أخطار الفيضانات، كما توفر بيئة للنباتات والحيوانات وتفيد في الزراعة وتربية الحيوانات.</p></details><details><summary>سؤال خريطة: عين الهضبة الغربية، جبل هلكرد، حقل عين زالة، وهور الحمار.</summary><p>الهضبة الغربية في غرب العراق، وهلكرد في الشمال الشرقي ضمن جبال حصاروست، وحقل عين زالة شمال غرب الموصل، وهور الحمار في جنوب السهل الرسوبي.</p></details><a href="https://iraqedu.net/%D8%A7%D8%B3%D8%A6%D9%84%D8%A9-%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%D9%8A%D8%A7%D8%AA-%D8%AF%D9%88%D8%B1-%D8%A7%D9%84%D8%A7%D9%88%D9%84-%D8%AB%D8%A7%D9%84%D8%AB-%D9%85%D8%AA%D9%88%D8%B3%D8%B7-2023/" target="_blank" rel="noreferrer">عرض نسخة الامتحان</a></article>
+      </div>
+    </section>
+    <section class="quiz-section" id="finalQuizSection">
+      <h2>اختبار ختامي</h2>
+      <p>١٢ سؤالاً من التعاريف والفراغات والاختيار والتعاليل. لكل سؤال إجابة صحيحة واحدة.</p>
+      <form id="finalQuiz">
+        <div class="quiz-grid">
+          <fieldset class="quiz-question" data-answer="b"><legend><span class="quiz-kind">تعريف</span>ما الطقس؟</legend><label><input type="radio" name="q1" value="a">وصف حالة الجو خلال سنوات طويلة.</label><label><input type="radio" name="q1" value="b">حالة الجو بعناصره في مكان محدد ولمدة قصيرة.</label><label><input type="radio" name="q1" value="c">متوسط درجات الحرارة في قارة كاملة.</label><p class="quiz-feedback" aria-live="polite"></p></fieldset>
+          <fieldset class="quiz-question" data-answer="c"><legend><span class="quiz-kind">تعريف</span>ما المناخ؟</legend><label><input type="radio" name="q2" value="a">حالة الجو خلال ساعة واحدة فقط.</label><label><input type="radio" name="q2" value="b">حركة الرياح في فصل الصيف.</label><label><input type="radio" name="q2" value="c">وصف عناصر الجو في مكان محدد خلال مدة زمنية طويلة.</label><p class="quiz-feedback" aria-live="polite"></p></fieldset>
+          <fieldset class="quiz-question" data-answer="a"><legend><span class="quiz-kind">أكمل الفراغ</span>يقع العراق بين دائرتي عرض ____ شمالاً.</legend><label><input type="radio" name="q3" value="a">٢٩° و٣٧°</label><label><input type="radio" name="q3" value="b">٣٨° و٤٨°</label><label><input type="radio" name="q3" value="c">٢٠° و٢٩°</label><p class="quiz-feedback" aria-live="polite"></p></fieldset>
+          <fieldset class="quiz-question" data-answer="c"><legend><span class="quiz-kind">أكمل الفراغ</span>تبلغ مساحة العراق نحو ____ كم².</legend><label><input type="radio" name="q4" value="a">٢٧٠٬٠٠٠</label><label><input type="radio" name="q4" value="b">٦٠٬٠٠٠</label><label><input type="radio" name="q4" value="c">٤٣٥٬٠٥٢</label><p class="quiz-feedback" aria-live="polite"></p></fieldset>
+          <fieldset class="quiz-question" data-answer="b"><legend><span class="quiz-kind">اختر الإجابة الصحيحة</span>أي ترتيب لحدود العراق صحيح؟</legend><label><input type="radio" name="q5" value="a">تركيا جنوباً، إيران غرباً، الكويت شمالاً.</label><label><input type="radio" name="q5" value="b">تركيا شمالاً، إيران شرقاً، الكويت جنوباً.</label><label><input type="radio" name="q5" value="c">سوريا شرقاً، الأردن شمالاً، إيران غرباً.</label><p class="quiz-feedback" aria-live="polite"></p></fieldset>
+          <fieldset class="quiz-question" data-answer="a"><legend><span class="quiz-kind">اختر الإجابة الصحيحة</span>ما أوسع الأقاليم المناخية في العراق؟</legend><label><input type="radio" name="q6" value="a">الإقليم الصحراوي.</label><label><input type="radio" name="q6" value="b">إقليم البحر المتوسط.</label><label><input type="radio" name="q6" value="c">إقليم السهوب.</label><p class="quiz-feedback" aria-live="polite"></p></fieldset>
+          <fieldset class="quiz-question" data-answer="c"><legend><span class="quiz-kind">أكمل الفراغ</span>تغطي النباتات الصحراوية قرابة ____ من مساحة العراق.</legend><label><input type="radio" name="q7" value="a">١٥٪</label><label><input type="radio" name="q7" value="b">٢٤٪</label><label><input type="radio" name="q7" value="c">٧٠٪</label><p class="quiz-feedback" aria-live="polite"></p></fieldset>
+          <fieldset class="quiz-question" data-answer="b"><legend><span class="quiz-kind">اختر الإجابة الصحيحة</span>أي مما يأتي من مصادر المياه السطحية؟</legend><label><input type="radio" name="q8" value="a">المياه المختزنة في باطن الأرض فقط.</label><label><input type="radio" name="q8" value="b">الأنهار والبحيرات والأودية الموسمية.</label><label><input type="radio" name="q8" value="c">مياه الأمطار قبل سقوطها.</label><p class="quiz-feedback" aria-live="polite"></p></fieldset>
+          <fieldset class="quiz-question" data-answer="a"><legend><span class="quiz-kind">علل</span>تعد المنطقة الجبلية من أهم مصادر المياه.</legend><label><input type="radio" name="q9" value="a">لتراكم الثلوج وغزارة الأمطار ووجود روافد دجلة.</label><label><input type="radio" name="q9" value="b">لاتساع الصحارى وقلة الغطاء النباتي.</label><label><input type="radio" name="q9" value="c">لانخفاضها عن مستوى سطح البحر.</label><p class="quiz-feedback" aria-live="polite"></p></fieldset>
+          <fieldset class="quiz-question" data-answer="c"><legend><span class="quiz-kind">علل</span>يصعب تصريف المياه في السهل الرسوبي.</legend><label><input type="radio" name="q10" value="a">لشدة انحداره وكثرة الأودية.</label><label><input type="radio" name="q10" value="b">لوقوعه في منطقة جبلية مرتفعة.</label><label><input type="radio" name="q10" value="c">لانبساطه وقلة انحداره واقتراب جنوبه من مستوى البحر.</label><p class="quiz-feedback" aria-live="polite"></p></fieldset>
+          <fieldset class="quiz-question" data-answer="b"><legend><span class="quiz-kind">علل</span>تكثر تعرجات دجلة بين شمال بغداد والكوت.</legend><label><input type="radio" name="q11" value="a">لزيادة انحدار الأرض وسرعة جريان الماء.</label><label><input type="radio" name="q11" value="b">لقلة الانحدار وبطء الجريان وزيادة الترسبات.</label><label><input type="radio" name="q11" value="c">لوجود الجبال العالية على جانبي النهر.</label><p class="quiz-feedback" aria-live="polite"></p></fieldset>
+          <fieldset class="quiz-question" data-answer="a"><legend><span class="quiz-kind">اختر الإجابة الصحيحة</span>أين يلتقي دجلة والفرات؟</legend><label><input type="radio" name="q12" value="a">عند القرنة، ويكوّنان شط العرب.</label><label><input type="radio" name="q12" value="b">عند بغداد، ويكوّنان نهر ديالى.</label><label><input type="radio" name="q12" value="c">عند الموصل، ويكوّنان الزاب الكبير.</label><p class="quiz-feedback" aria-live="polite"></p></fieldset>
+        </div>
+        <div class="quiz-actions"><button class="grade" type="submit">صحح الاختبار</button><button class="reset" type="reset">إعادة المحاولة</button></div>
+        <p class="quiz-result" id="quizResult" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+</div>
+<footer class="footer-note">هذا الملخص يغطي صفحات الجغرافية المرفقة من الوحدة الأولى (5–36).</footer>
+<script>
+(() => {
+  const cards = [...document.querySelectorAll('.topic')];
+  const search = document.querySelector('#searchInput');
+  const emptyState = document.querySelector('#emptyState');
+  const progressKey = 'iraq-social-studies-progress';
+  const savedProgress = JSON.parse(localStorage.getItem(progressKey) || '{}');
+
+  document.querySelectorAll('[data-progress]').forEach((checkbox) => {
+    checkbox.checked = Boolean(savedProgress[checkbox.dataset.progress]);
+    checkbox.closest('.topic').classList.toggle('is-complete', checkbox.checked);
+    checkbox.addEventListener('change', () => {
+      savedProgress[checkbox.dataset.progress] = checkbox.checked;
+      checkbox.closest('.topic').classList.toggle('is-complete', checkbox.checked);
+      localStorage.setItem(progressKey, JSON.stringify(savedProgress));
+      updateProgress();
+    });
+  });
+
+  function updateProgress() {
+    const done = document.querySelectorAll('[data-progress]:checked').length;
+    document.querySelector('#progressText').textContent = `${done} من ${cards.length} موضوعات منجزة`;
+    document.querySelector('#progressBar').style.width = `${done / cards.length * 100}%`;
+  }
+
+  function filterCards() {
+    const term = search.value.trim().toLocaleLowerCase('ar');
+    let visible = 0;
+    cards.forEach((card) => {
+      const textMatches = card.textContent.toLocaleLowerCase('ar').includes(term);
+      card.hidden = !textMatches;
+      if (!card.hidden) visible += 1;
+    });
+    emptyState.classList.toggle('show', visible === 0);
+  }
+
+  search.addEventListener('input', filterCards);
+
+  let printState;
+  window.addEventListener('beforeprint', () => {
+    const details = [...document.querySelectorAll('details')];
+    printState = { hiddenCards: cards.map((card) => card.hidden), openDetails: details.map((item) => item.open) };
+    cards.forEach((card) => { card.hidden = false; });
+    details.forEach((item) => { item.open = true; });
+  });
+  window.addEventListener('afterprint', () => {
+    if (!printState) return;
+    cards.forEach((card, index) => { card.hidden = printState.hiddenCards[index]; });
+    document.querySelectorAll('details').forEach((item, index) => { item.open = printState.openDetails[index]; });
+    printState = undefined;
+  });
+
+  const definitionLabels = {
+    relief: ['التضاريس:', 'المنطقة الجبلية:', 'مميزات المنطقة الجبلية:', 'المنطقة شبه الجبلية:', 'منطقة التلال والهضاب:', 'السهل الرسوبي:', 'الهضبة الصحراوية الغربية:'],
+    regions: ['الإقليم:', 'إقليم مناخ البحر المتوسط:', 'إقليم مناخ السهوب:', 'إقليم المناخ الصحراوي:'],
+    plants: ['النبات الطبيعي:', 'نطاق الغابات والأعشاب الجبلية:', 'نطاق السهوب:', 'نطاق ضفاف الأنهار:', 'نطاق الأهوار والمستنقعات:', 'نطاق النباتات الصحراوية:'],
+    water: ['الموارد المائية:', 'مياه الأمطار والثلوج:', 'المياه السطحية:', 'المياه الجوفية:'],
+    tigris: ['منابع نهر دجلة:', 'روافد نهر دجلة:', 'روافد دجلة:', 'تفرعات نهر دجلة:', 'مجرى دجلة والسدود:'],
+    euphrates: ['منابع نهر الفرات:', 'فروع نهر الفرات:', 'التقاء الفرات بدجلة:', 'شط العرب:']
+  };
+
+  Object.entries(definitionLabels).forEach(([topicId, labels]) => {
+    const topic = document.querySelector(`#${topicId}`);
+    const definition = topic.querySelector('.definition');
+    const heading = definition.closest('.subsection').querySelector('h3');
+    if (heading.textContent.trim() === 'من نص الكتاب') heading.textContent = 'التعاريف';
+    definition.querySelectorAll('p').forEach((paragraph, index) => {
+      if (labels[index] && !paragraph.querySelector('b, strong')) {
+        const label = document.createElement('strong');
+        label.textContent = labels[index];
+        paragraph.prepend(label, document.createTextNode(' '));
+      }
+    });
+  });
+
+  const finalQuiz = document.querySelector('#finalQuiz');
+  const quizResult = document.querySelector('#quizResult');
+  finalQuiz.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const questions = [...finalQuiz.querySelectorAll('.quiz-question')];
+    let score = 0;
+
+    questions.forEach((question) => {
+      const selected = question.querySelector('input:checked');
+      const correctValue = question.dataset.answer;
+      const correctLabel = question.querySelector(`input[value="${correctValue}"]`).closest('label');
+      const feedback = question.querySelector('.quiz-feedback');
+      const isCorrect = selected?.value === correctValue;
+
+      question.classList.toggle('is-right', isCorrect);
+      question.classList.toggle('is-wrong', !isCorrect);
+      feedback.textContent = isCorrect ? 'إجابة صحيحة.' : `الإجابة الصحيحة: ${correctLabel.textContent.trim()}`;
+      if (isCorrect) score += 1;
+    });
+
+    quizResult.textContent = `نتيجتك: ${score} من ${questions.length}`;
+  });
+
+  finalQuiz.addEventListener('reset', () => {
+    requestAnimationFrame(() => {
+      finalQuiz.querySelectorAll('.quiz-question').forEach((question) => {
+        question.classList.remove('is-right', 'is-wrong');
+        question.querySelector('.quiz-feedback').textContent = '';
+      });
+      quizResult.textContent = '';
+    });
+  });
+
+  updateProgress();
+})();
+</script>
+</body>
+</html>
